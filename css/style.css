@@ -50,6 +50,73 @@ body {
   padding: 0;
 }
 
+.screenshot-inner {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  height: 249px;
+  width: 444px;
+  display: block;
+  position: relative;
+  top: 20px;
+  left: 19px;
+  transition: all ease-in-out 0.2s;
+}
+
+.screenshot-inner:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.screenshot-inner-3 {
+  background-image: url('../images/ezmi.png');
+}
+
+.screenshot-inner-4 {
+  background-image: url('../images/seamy.png');
+}
+
+.screenshot-inner-5 {
+  background-image: url('../images/boxbuzz.png');
+}
+
+.screenshot-inner-7 {
+  background-image: url('../images/budgeto.png');
+}
+
+.screenshot-inner-8 {
+  background-image: url('../images/effenti.png');
+}
+
+.screenshot-inner-9 {
+  background-image: url('../images/timchat.png');
+}
+
+.screenshot-inner-10 {
+  background-image: url('../images/timeline.png');
+}
+
+.screenshot-inner-13 {
+  background-image: url('../images/miel.png');
+}
+
+.screenshot-inner-15 {
+  background-image: url('../images/vegeporc.png');
+    background-position: center;
+}
+
+.screenshot-inner-16 {
+  background-image: url('../images/sushi.png');
+}
+
+.screenshot-inner-17 {
+  background-image: url('../images/time-in-colors.png');
+}
+
+.screenshot-inner-18 {
+  background-image: url('../images/convertisseur-html.png');
+}
+
 .page {
   min-height: 500px;
   height: 58vh;
@@ -58,6 +125,8 @@ body {
 }
 
 .page-0 {
+  padding-top: 60px;
+  margin-bottom: 50px;
   min-height: 260px;
   height: 30vh;
 }
@@ -79,10 +148,11 @@ body {
   width: calc(50% - 20px);
   float: right;
   clear: both;
+  margin-top: -45px;
 }
 
 .sideband {
-  background-color: #2ecc71;
+  background: linear-gradient(#2ecc71, #3498db);
   width: 160px;
   position: absolute;
   height: 100%;
@@ -94,9 +164,10 @@ body {
 .screenshot {
   background-image: url('../images/mockup.svg');
   background-size: contain;
-  background-position: center;
+  background-position: left;
   background-repeat: no-repeat;
   width: 100%;
+  min-width: 480px;
   min-height: 400px;
   height: 40vh;
 }
@@ -117,6 +188,6 @@ body {
   left: 0;
   top: 0px;
   text-align: right;
-  max-width: 290px;
+  max-width: 320px;
   padding-right: 50px;
 }
