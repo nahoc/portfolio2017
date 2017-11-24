@@ -1,193 +1,167 @@
-* {
+footer {
+  background-color: #2e2e2e;
+}
+
+.contact {
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+}
+
+.copyright {
+  background-color: #222;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+}
+
+.social-links li {
+  display: inline-block;
+  margin-right: 0.3rem;
+  opacity: 0.6;
+}
+
+.social-links li:hover {
+  opacity: 1;
+}
+
+.spacer {
+  display: block;
+  height: 8px;
+}
+
+.social-links li:last-child {
+  margin-right: 0;
+}
+
+.percent {
+  font-size: 90%;
+  margin-top: 2px;
+}
+
+.progress-custom {
+  height: 0.4rem!important;
+  margin-bottom: 4px!important;
+}
+
+.social-icon {
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-size: 0;
+  display: block;
+  width: 24px;
+  height: 24px;
+}
+
+
+.facebook {
+  background-image: url('../images/facebook.svg');
+}
+
+.twitter {
+  background-image: url('../images/twitter.svg');
+}
+
+.linkedin {
+  background-image: url('../images/linkedin.svg');
+}
+
+.youtube {
+  background-image: url('../images/youtube.svg');
+}
+
+.heading {
+  color: #fff;
+  font-weight: bold;
+}
+
+.heading-black {
   color: #2e2e2e;
 }
 
-body::-webkit-scrollbar {
-    width: 0.8rem;
-}
- 
-body::-webkit-scrollbar-track {
-    background-color: #f5f5f5;
-}
- 
-body::-webkit-scrollbar-thumb {
-  background-color: #ddd;
-}
-
-.primary {
+.fancy {
   color: #2ecc71;
-  font-size: 150%;
+  font-family: 'Gochi Hand', cursive;
 }
 
-.project-title {
-  font-size: 3rem;
-    text-transform: uppercase;
-  font-family: 'Anton', sans-serif;
+.tabs li.is-active a {
+  color: #2ecc71;
+  border-bottom-color: #2ecc71;
+}
+
+.max-width {
+  max-width: 800px;
+  margin: auto;
+}
+
+.is-white {
+  background-color: transparent!important;
+}
+.hero-color {
+  background-color: #f2f2f2;
+}
+
+.navbar {
+  background-color: transparent;
+}
+
+.grey-bg {
+  background-color: #f2f2f2;
+}
+
+#portfolio .column {
+  margin-bottom: 20px;
+}
+
+#portfolio .column .subtitle {
+  margin-top: 6px;
+  font-size: 0.8rem;
+}
+.heading:before {
+  content: "—";
+  opacity: 0.4;
+  margin-right: 1rem;
+  position: relative;
+  top: -1px;
+}
+
+.heading:after {
+  content: "—";
+  opacity: 0.4;
+  margin-left: 1rem;
+  position: relative;
+  top: -1px;
+}
+
+.heading-black:before {
+  content: "—";
+  opacity: 1;
+  margin-right: 1rem;
+  position: relative;
+  top: -1px;
+}
+
+.heading-black:after {
+  content: "—";
+  opacity: 1;
+  margin-left: 1rem;
+  position: relative;
+  top: -1px;
+}
+
+.phone {
+  margin-bottom: 0!important;
+}
+
+.phone a {
+  font-weight: bold;
+  color: #fff;
+}
+.phone a:hover {
+  color: #fff;
+  opacity: 0.7;
 }
 
 small {
-  font-size: 40%;
-}
-
-.title {
-  text-transform: uppercase;
-  font-family: 'Anton', sans-serif;
-}
-
-body {
-  background-color: #f5f5f5;
-  height: 100%;
-  position: relative;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-    font-family: 'Lato', sans-serif;
-}
-
-.container {
-  height: 100%;
-  width: 100%;
-  position: relative;
-  padding: 0;
-}
-
-.screenshot-inner {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top center;
-  height: 249px;
-  width: 444px;
-  display: block;
-  position: relative;
-  top: 20px;
-  left: 19px;
-  transition: all ease-in-out 0.2s;
-}
-
-.screenshot-inner:hover {
-  opacity: 0.8;
-  cursor: pointer;
-}
-
-.screenshot-inner-3 {
-  background-image: url('../images/ezmi.png');
-}
-
-.screenshot-inner-4 {
-  background-image: url('../images/seamy.png');
-}
-
-.screenshot-inner-5 {
-  background-image: url('../images/boxbuzz.png');
-}
-
-.screenshot-inner-7 {
-  background-image: url('../images/budgeto.png');
-}
-
-.screenshot-inner-8 {
-  background-image: url('../images/effenti.png');
-}
-
-.screenshot-inner-9 {
-  background-image: url('../images/timchat.png');
-}
-
-.screenshot-inner-10 {
-  background-image: url('../images/timeline.png');
-}
-
-.screenshot-inner-13 {
-  background-image: url('../images/miel.png');
-}
-
-.screenshot-inner-15 {
-  background-image: url('../images/vegeporc.png');
-    background-position: center;
-}
-
-.screenshot-inner-16 {
-  background-image: url('../images/sushi.png');
-}
-
-.screenshot-inner-17 {
-  background-image: url('../images/time-in-colors.png');
-}
-
-.screenshot-inner-18 {
-  background-image: url('../images/convertisseur-html.png');
-}
-
-.page {
-  min-height: 500px;
-  height: 58vh;
-  position: relative;
-  width: 100%;
-}
-
-.page-0 {
-  padding-top: 60px;
-  margin-bottom: 50px;
-  min-height: 260px;
-  height: 30vh;
-}
-
-.page-1 {
-}
-
-.page-2 {
-}
-
-.badge {
-  background: #2ecc71;
-  color: #ffffff;
-  border: 0;
-  padding: 4px 6px;
-}
-
-.right {
-  width: calc(50% - 20px);
-  float: right;
-  clear: both;
-  margin-top: -45px;
-}
-
-.sideband {
-  background: linear-gradient(#2ecc71, #3498db);
-  width: 160px;
-  position: absolute;
-  height: 100%;
-  top: 0;
-  left: 30%;
-  bottom: 0;
-}
-
-.screenshot {
-  background-image: url('../images/mockup.svg');
-  background-size: contain;
-  background-position: left;
-  background-repeat: no-repeat;
-  width: 100%;
-  min-width: 480px;
-  min-height: 400px;
-  height: 40vh;
-}
-
-.date {
-  color: #f5f5f5;
-  font-size: 8rem;
-  position: absolute;
-  left: calc(30% - 4px);
-  line-height: 7.5rem;
-  top: 0px;
-  display: inline-block;
-    font-family: 'Anton', sans-serif;
-}
-
-.description {
-  position: absolute;
-  left: 0;
-  top: 0px;
-  text-align: right;
-  max-width: 320px;
-  padding-right: 50px;
+  color: #fff;
+  opacity: 0.4;
 }
