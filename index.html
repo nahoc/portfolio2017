@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Cohan Carpentier</title>
+    <link rel="icon" type="image/png" href="images/favicon.png" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/bulma.css">
     <link href="https://fonts.googleapis.com/css?family=Gochi+Hand" rel="stylesheet">
@@ -12,13 +13,12 @@
 </head>
 
 <body>
-    <nav class="navbar is-transparent is-fixed-top">
+    <nav id="navbar" class="navbar is-transparent is-fixed-top">
         <div class="navbar-brand">
             <a class="navbar-item" href="https://bulma.io">
                 <img src="images/logo.svg" alt="Cohan logo" width="112" height="28">
             </a>
         </div>
-
         <div class="navbar-end">
             <div class="navbar-item">
                 <div class="field is-grouped">
@@ -34,13 +34,14 @@
             </div>
         </div>
     </nav>
-    <section class="hero is-large hero-color">
+    <section id="hero" class="hero is-large hero-color">
         <div class="hero-body">
             <div class="container">
-                <h1 class="title">
-                    I'm John Doe
+                <h1 class="title is-1 cohan is-uppercase">
+                    Cohan
+                    <br/>Carpentier
                 </h1>
-                <h2 class="subtitle">
+                <h2 class="is-6 subtitle full-stack is-uppercase">
                     Full-stack designer
                 </h2>
             </div>
@@ -62,8 +63,9 @@
                     faucibus. Donec eleifend mi risus. Integer ultricies vulputate convallis. Vestibulum in suscipit lectus,
                     at dictum turpis.</p>
                 <br/>
-                <a href="#portfolio" class="button is-light">Portfolio</a>&nbsp;&nbsp;&nbsp;&nbsp;
-                <a href="#contact" class="button is-dark">Contact me</a>
+                <a data-scroll href="#portfolio" class="button is-light">Portfolio</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a data-scroll href="#contact" class="button is-dark">Contact me</a>
+                <br/>
                 <br/>
                 <br/>
             </div>
@@ -75,20 +77,20 @@
                 <div class="column">
                     <h4 class="title is-4">Education and jobs</h4>
                     <p>Effenti</p>
-                    <p>Programmeur-analyste</p>
-                    <p>2017</p>
+                    <p class="green">Programmeur-analyste</p>
+                    <p class="light">2017</p>
                     <br/>
                     <p>La Capitale Assurance et services financiers</p>
-                    <p>Intégrateur multimédia</p>
-                    <p>2016</p>
+                    <p class="green">Intégrateur multimédia</p>
+                    <p class="light">2016</p>
                     <br/>
                     <p>CÉGEP de Ste-Foy</p>
-                    <p>Techniques en intégration multimédia</p>
-                    <p>2017</p>
+                    <p class="green">Techniques en intégration multimédia</p>
+                    <p class="light">2017</p>
                     <br/>
                     <p>CÉGEP de l'Abitibi-Témiscamingue</p>
-                    <p>DEC Sciences humaines</p>
-                    <p>2012</p>
+                    <p class="green">DEC Sciences humaines</p>
+                    <p class="light">2012</p>
                 </div>
                 <div class="column">
                     <h4 class="title is-4">What I'm doing</h4>
@@ -136,6 +138,7 @@
             <br/>
         </div>
     </section>
+
     <section id="portfolio" class="section">
         <div class="has-text-centered">
             <h5 class="subtitle is-5 fancy">some works</h5>
@@ -160,50 +163,148 @@
         </div>
         <div class="columns" style="flex-wrap: wrap;">
             <div class="column is-one-third-tablet is-one-third-desktop is-one-third-widescreen is-one-quarter-fullhd">
-                <img src="https://picsum.photos/800/?random" alt="" />
-                <div class="has-text-centered">
-                    <h6 class="subtitle is-6">Subtitle 6</h6>
-                    <h6 class="title is-6 is-uppercase">Education and jobs</h6>
+                <div class="card">
+                    <div class="project project-boxbuzz"></div>
+                    <div class="card-content">
+                        <div class="has-text-centered">
+                            <h6 class="subtitle is-6">Subtitle 6</h6>
+                            <h6 class="title is-6 is-uppercase">SADC LMR</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column is-one-third-tablet is-one-third-desktop is-one-third-widescreen is-one-quarter-fullhd">
+                    <div class="card">
+                            <a href="#" target="_blank">
+                                <div class="project project-ciusss"></div>
+                                <div class="card-content">
+                                    <div class="has-text-centered">
+                                        <h6 class="subtitle is-6">Online budgets for entrepreneurs</h6>
+                                        <h6 class="title is-6 is-uppercase">Guide Antipoison</h6>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+            </div>
+            <div class="column is-one-third-tablet is-one-third-desktop is-one-third-widescreen is-one-quarter-fullhd">
+
+                <div class="card">
+                    <div class="project project-ezmi"></div>
+                    <div class="card-content">
+                        <div class="has-text-centered">
+                            <h6 class="subtitle is-6">Subtitle 6</h6>
+                            <h6 class="title is-6 is-uppercase">EZMI</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column is-one-third-tablet is-one-third-desktop is-one-third-widescreen is-one-quarter-fullhd">
+                <div class="card">
+                    <div class="project project-seamy"></div>
+                    <div class="card-content">
+                        <div class="has-text-centered">
+                            <h6 class="subtitle is-6">Subtitle 6</h6>
+                            <h6 class="title is-6 is-uppercase">EZMI</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column is-one-third-tablet is-one-third-desktop is-one-third-widescreen is-one-quarter-fullhd">
+                <div class="card">
+                    <div class="project project-boxbuzz"></div>
+                    <div class="card-content">
+                        <div class="has-text-centered">
+                            <h6 class="subtitle is-6">Subtitle 6</h6>
+                            <h6 class="title is-6 is-uppercase">Boxbuzz</h6>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="column is-one-third-tablet is-one-third-desktop is-one-third-widescreen is-one-quarter-fullhd">
                 <img src="https://picsum.photos/800/?random" alt="" />
                 <div class="has-text-centered">
                     <h6 class="subtitle is-6">Subtitle 6</h6>
-                    <h6 class="title is-6 is-uppercase">Education and jobs</h6>
+                    <h6 class="title is-6 is-uppercase">CV NUMÉRIQUE</h6>
                 </div>
             </div>
             <div class="column is-one-third-tablet is-one-third-desktop is-one-third-widescreen is-one-quarter-fullhd">
-                <img src="https://picsum.photos/800/?random" alt="" />
-                <div class="has-text-centered">
-                    <h6 class="subtitle is-6">Subtitle 6</h6>
-                    <h6 class="title is-6 is-uppercase">Education and jobs</h6>
+                <div class="card">
+                    <a href="#" target="_blank">
+                        <div class="project project-budgeto"></div>
+                        <div class="card-content">
+                            <div class="has-text-centered">
+                                <h6 class="subtitle is-6">Online budgets for entrepreneurs</h6>
+                                <h6 class="title is-6 is-uppercase">Budgeto</h6>
+                            </div>
+                        </div>
+                    </a>
                 </div>
             </div>
             <div class="column is-one-third-tablet is-one-third-desktop is-one-third-widescreen is-one-quarter-fullhd">
-                <img src="https://picsum.photos/800/?random" alt="" />
-                <div class="has-text-centered">
-                    <h6 class="subtitle is-6">Subtitle 6</h6>
-                    <h6 class="title is-6 is-uppercase">Education and jobs</h6>
+                <div class="card">
+                    <div class="project project-effenti"></div>
+                    <div class="card-content">
+                        <div class="has-text-centered">
+                            <h6 class="subtitle is-6">Subtitle 6</h6>
+                            <h6 class="title is-6 is-uppercase">Effenti</h6>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="column is-one-third-tablet is-one-third-desktop is-one-third-widescreen is-one-quarter-fullhd">
-                <img src="https://picsum.photos/800/?random" alt="" />
-                <div class="has-text-centered">
-                    <h6 class="subtitle is-6">Subtitle 6</h6>
-                    <h6 class="title is-6 is-uppercase">Education and jobs</h6>
+                <div class="card">
+                    <div class="project project-timchat"></div>
+                    <div class="card-content">
+                        <div class="has-text-centered">
+                            <h6 class="subtitle is-6">Subtitle 6</h6>
+                            <h6 class="title is-6 is-uppercase">Timchat</h6>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="column is-one-third-tablet is-one-third-desktop is-one-third-widescreen is-one-quarter-fullhd">
-                <img src="https://picsum.photos/800/?random" alt="" />
-                <div class="has-text-centered">
-                    <h6 class="subtitle is-6">Subtitle 6</h6>
-                    <h6 class="title is-6 is-uppercase">Education and jobs</h6>
+                <div class="card">
+                    <a target="_blank" href="images/timeline.png">
+                        <div class="project project-timeline"></div>
+                        <div class="card-content">
+                            <div class="has-text-centered">
+                                <h6 class="subtitle is-6">Subtitle 6</h6>
+                                <h6 class="title is-6 is-uppercase">timeline</h6>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="column is-one-third-tablet is-one-third-desktop is-one-third-widescreen is-one-quarter-fullhd">
+                <a class="card">
+                    <div class="project project-lolmastery"></div>
+                    <div class="card-content">
+                        <div class="has-text-centered">
+                            <h6 class="subtitle is-6">Subtitle 6</h6>
+                            <h6 class="title is-6 is-uppercase">LolMastery</h6>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="column is-one-third-tablet is-one-third-desktop is-one-third-widescreen is-one-quarter-fullhd">
+                <div class="card">
+                    <div class="project project-vegeporc"></div>
+                    <div class="card-content">
+                        <div class="has-text-centered">
+                            <h6 class="subtitle is-6">Subtitle 6</h6>
+                            <h6 class="title is-6 is-uppercase">Végéporc</h6>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
     </section>
-    <section class="section grey-bg">
+    <!--<section class="section grey-bg">
         <div class="container">
             <nav class="columns is-variable is-8">
                 <div class="column is-flex has-text-centered" style="align-items: center;">
@@ -223,7 +324,7 @@
                 </div>
             </nav>
         </div>
-    </section>
+    </section>-->
     <footer>
         <div id="contact" class="contact">
             <div class="container has-text-centered">
@@ -255,6 +356,8 @@
             <small>2017 &copy; Cohan Carpentier</small>
         </div>
     </footer>
+    <script src="js/smooth-scroll.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

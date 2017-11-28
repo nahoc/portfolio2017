@@ -4,7 +4,7 @@ footer {
 
 .contact {
   padding-top: 5rem;
-  padding-bottom: 2rem;
+  padding-bottom: 3.6rem;
 }
 
 .copyright {
@@ -17,6 +17,81 @@ footer {
   display: inline-block;
   margin-right: 0.3rem;
   opacity: 0.6;
+}
+
+.green {
+  color: #2ecc71;
+  font-weight: bold;
+}
+
+.i-am {
+  font-weight: 200;
+  line-height: 0.9;
+  font-size: 6.4rem!important;
+  margin-bottom: 0!important;
+}
+
+.full-stack {
+  margin-top: -1rem!important;
+  letter-spacing: 6px;
+  margin-left: 8px!important;
+  margin-top: -14px!important;
+}
+
+.light {
+  opacity: 0.4;
+  font-size: 0.7rem;
+}
+
+.project {
+  height: 33vh;
+  min-height: 200px;
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.project-ezmi {
+  background-image: url('../images/ezmi.png');
+}
+
+.project-seamy {
+  background-image: url('../images/seamy.png');
+}
+
+.project-boxbuzz {
+  background-image: url('../images/boxbuzz.png');
+}
+
+.project-effenti {
+  background-image: url('../images/effenti-e.jpg');
+}
+
+.project-budgeto {
+  background-image: url('../images/budgeto-e.jpg');
+}
+
+.project-timchat {
+  background-image: url('../images/timchat.png');
+}
+
+.project-timeline {
+  background-image: url('../images/timeline.png');
+}
+
+.project-miel {
+  background-image: url('../images/miel.png');
+}
+
+.project-ciusss {
+  background-image: url('../images/ciusss-e.jpg');
+}
+
+.cohan {
+  color: #2ecc71;
+  font-weight: bold;
+  line-height: 0.9;
+  font-size: 6.4rem!important;
 }
 
 .social-links li:hover {
@@ -101,6 +176,8 @@ footer {
 
 .navbar {
   background-color: transparent;
+  transition: background-color 0.17s ease-in-out;
+  box-shadow: none;
 }
 
 .grey-bg {
@@ -111,10 +188,24 @@ footer {
   margin-bottom: 20px;
 }
 
+#portfolio .card {
+  border-radius: 4px;
+}
+
 #portfolio .column .subtitle {
   margin-top: 6px;
   font-size: 0.8rem;
 }
+
+#portfolio .card {
+  transition: opacity 0.17s ease-in-out;
+}
+
+#portfolio .card:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
 .heading:before {
   content: "—";
   opacity: 0.4;
